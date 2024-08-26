@@ -36,16 +36,22 @@
     </header>
 
     <div class="introduccion">
-        <h1 class="titulo">Sistema Operativo Linux</h1>
-        <img src="imagenes/linux.png" alt="" class="img-intro">
-        
+        <div class="texto-intro">
+            <h1>Sistema Operativo Linux</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Magnam unde porro dolores totam molestiae ducimus iusto, 
+                perferendis cum voluptate aspernatur culpa doloribus at fuga, 
+                voluptates soluta eligendi explicabo, corporis ea.</p>
+        </div>
+        <img src="/imagenes/linux.png" alt="Linux logo" class="img-intro">
     </div>
+    
     
     <div class="contenido-principal">
 
         <div class="bloque">
 
-            <h2 class="subtitulo">Sistema Operativo</h2>
+            <h2 class="subtitulo">Sistema Operativo<img class="icono" src="/imagenes/so.gif" alt=""></h2>
 
             <p>Un Sistema operativo actúa como un intermediario entre el usuario de una computadora y el hardware de la misma.El propósito de un sistema operativo es proporcionar un entorno en el que el usuario pueda ejecutar programas de una manera práctica y eficiente.
                 El sistema es un programa que administra el hardware de una computadora. También proporciona las bases para los programas de aplicación y actúa como un intermediario entre el usuario y el hardware de la computadora.
@@ -56,31 +62,42 @@
             </p>
         </div> 
         
-        <div class="bloque">
-            <h2 class="subtitulo">Tenemos distintos tipos de  sistemas operativos</h2>
-        
-            <p>Windows:
-                Desarrollado por Microsoft, Windows es de los sistemas operativos más utilizados como para uso personal o laboral.Con una interfaz  amigable para el usuario, ofrece una amplia compatibilidad con software comercial y videojuegos, y es conocido por su facilidad de uso y soporte técnico.<br>
-                <br>
-                macOS:
-                Es el sistema operativo desarrollado por Apple para las computadoras Mac.
-                Conocido por su buen diseño,estabilidad y su fuerte integración con otros productos Apple,macOS.<br>
-                <br>
-                Android:
-                Es el sistema operativo móvil basado en Linux,desarrollado por google.Es el más utilizado en dispositivos móviles como smartphones y tablets.Ofrece una gran variedad para que los desarrolladores crean
-                 diversas aplicaciones, y su tienda google es una de las más grandes del mundo.<br>
-                <br>
-                IOS:
-                Desarrollada por Apple,IOS es otro sistema operativo para móvil como lo es iphone y iPad.Conocido por su seguridad,rendimiento y diseño intuitivo, IOS ofrece una experiencia fluida al usuario y además una muy buena seguridad.<br>
-                <br>
-                Chrome OS:
-                Un sistema operativo ligero desarrollado por google.Está diseñado para ser utilizado principalmente con aplicaciones web, lo que lo hace rápido y eficiente en dispositivos con especificaciones modestas.<br>
-                <br>
-            </p>
+            <!-- Sección que se verá como la imagen -->
+        <div class="bloque servicios">
+            <h2 class="subtitulo">Tenemos distintos sistemas operativos</h2>
+            <div class="fila-servicios">
+                <div class="servicio">
+                    <img class="icon" src="/imagenes/servicios/windows.png" alt="">
+                    <h3>Windows</h3>
+                    <p>Desarrollado por Microsoft, Windows es de los sistemas operativos más utilizados como para uso personal o laboral.[...]</p>
+                </div>
+                <div class="servicio">
+                    <img class="icon" src="/imagenes/servicios/macOS.png" alt="">
+                    <h3>macOS</h3>
+                    <p>Es el sistema operativo desarrollado por Apple para las computadoras Mac.[...]</p>
+                </div>
+                <div class="servicio">
+                    <img class="icon" src="/imagenes/servicios/android.png" alt="">
+                    <h3>Android</h3>
+                    <p>Es el sistema operativo móvil basado en Linux, desarrollado por Google.[...]</p>
+                </div>
+            </div>
+            <div class="fila-servicios">
+                <div class="servicio">
+                    <img class="icon" src="/imagenes/servicios/apple.png" alt="">
+                    <h3>IOS</h3>
+                    <p>Desarrollada por Apple, IOS es otro sistema operativo para móviles como iPhone y iPad.[...]</p>
+                </div>
+                <div class="servicio">
+                    <img class="icon" src="/imagenes/servicios/chrome.png" alt="">
+                    <h3>Chrome OS</h3>
+                    <p>Un sistema operativo ligero desarrollado por Google. Está diseñado para ser utilizado principalmente con aplicaciones web.[...]</p>
+                </div>
+            </div>
         </div>
 
         <div class="bloque">
-            <h2 class="subtitulo">La distribucion de Linux</h2>
+            <h2 class="subtitulo">La distribucion de Linux<img class="icono" src="/imagenes/settings.png" alt=""></h2>
     
             <p>La distribución, o “distro”, es esencialmente una versión empaquetada de Linux que incluye el kernel de Linux, software de sistema y utilidades, 
                 así como un sistema de gestión de paquetes. Cada distribución tiene su propia combinación única de estos elementos,
@@ -106,7 +123,7 @@
 
     </div>
     <div class="bloque">
-        <h2 class="subtitulo">Consejos Para inicializar con linux</h2>
+        <h2 class="subtitulo">Consejos Para inicializar con linux <img class="icono" src="/imagenes/iconoL.png" alt=""></h2>
     
         <p>Introduccion:
             Linux es un sistema operativo de código abierto que ofrece una amplia gama de posibilidades y flexibilidad. Para aquellos que se están iniciando en el uso, puede parecer abrumador al principio. Sin embargo, con algunos consejos útiles, podrás adentrarte en este mundo con confianza .<br>
@@ -144,7 +161,8 @@
 
     <div id="act" class="actividades">
         <!-- Aquí comienza el test -->
-        <div id="test">
+        <div id="test" class="test">
+            <h1>ACTIVIDADES</h1>
             <div class="opciones">
                 <h3>Pregunta 1: ¿Cuál es el propósito principal de un sistema operativo?</h3><!-- Opciones -->
                 <div class="options">
@@ -172,28 +190,28 @@
                     <input type="radio" name="q3" value="d"> D. Solo es usado en servidores<br>
                 </div>
             </div>
-            <button class="boton-enviar" onclick="TestCorrecto()">Enviar Respuestas</button>  <!-- Boton para saber result -->
+            <button class="boton-enviar" onclick="TestCorrecto()">Enviar Respuestas</button> 
+            <div id="resultado"></div> 
         </div>
 
-        <div id="resultado"></div>
-
-    </div>    
+    
+        <div>
+            <img src="/imagenes/stitch.jpg" alt="" class="stitch">
+        </div>
+    </div>   
+    
+    
+   
     <!-- ---------aca iria un video de alguno con linux y que muestre todo de linux-------- -->
          <!-- --con esto ya terminamos-------- -->
 
-
-    
    
-    
-       
-    
-
  
 
     <!-- ---------FOOTER-------- -->
     <section id="contactos">
     <footer class="fin">
-        <img class="copyright" src="/imagenes/copyright.png" alt="">
+        <!--<img class="copyright" src="/imagenes/copyright.png" alt="">-->
         <p>Joaquin Augusto Flores - Augusto Ojeda Mathe - Ivan Cabrera Gonzalo - Rodrigo Magallanes<br>
             Numero de la Empresa: 3794567843<br>
             Correo electronico:LosPibes2024@gmail.com<br>
