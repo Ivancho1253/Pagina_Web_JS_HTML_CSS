@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<script src="script.js"></script>
+<html lang="en">
+<head>
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabajo Practico Linux</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./imagenes/linux.png" type="">
+    
+    </head>
+</head>
+<body class="fondo">
+    <header class="encabezado">
+        <nav class="main-navbar">
+            <ul class="menu">
+                <li><a class="nav-item" href="index.html"><strong>Inicio</strong></a></li>
+                <li><a class="nav-item" href="index.html"><strong>Linux</strong></a></li>
+                <li><a class="nav-item" href="index.html#contactos"><strong>Contactos</strong></a></li>
+                <li><a class="nav-item" href="actividades.html"><strong>Actividades</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="act" class="actividades">
+        <!-- Aquí comienza el test -->
+        <div id="test" class="test">
+            <h1>ACTIVIDADES</h1>
+            <div class="opciones">
+                <h3>Pregunta 1: ¿Cuál es el propósito principal de un sistema operativo?</h3><!-- Opciones -->
+                <div class="options">
+                    <input type="radio" name="q1" value="a"> A. Proporcionar un entorno para ejecutar programas<br>
+                    <input type="radio" name="q1" value="b"> B. Administrar el hardware<br>
+                    <input type="radio" name="q1" value="c"> C. Proteger la computadora de virus<br>
+                    <input type="radio" name="q1" value="d"> D. Proveer acceso a internet<br>
+                </div>
+            </div>
+            <div class="opciones"><!-- Opciones2 -->
+                <h3>Pregunta 2: ¿Cuál de los siguientes es un sistema operativo de código abierto?</h3>
+                <div class="options">
+                    <input type="radio" name="q2" value="a"> A. Windows<br>
+                    <input type="radio" name="q2" value="b"> B. macOS<br>
+                    <input type="radio" name="q2" value="c"> C. Linux<br>
+                    <input type="radio" name="q2" value="d"> D. DOS<br>
+                </div>
+            </div>
+            <div class="opciones"><!-- Opciones3 -->
+                <h3>Pregunta 3: ¿Cuál es una característica importante de Linux?</h3>
+                <div class="options">
+                    <input type="radio" name="q3" value="a"> A. Es de código cerrado<br>
+                    <input type="radio" name="q3" value="b"> B. No se puede personalizar<br>
+                    <input type="radio" name="q3" value="c"> C. Ofrece flexibilidad y personalización<br>
+                    <input type="radio" name="q3" value="d"> D. Solo es usado en servidores<br>
+                </div>
+            </div>
+            <div class="opciones"><!-- Opciones4 -->
+                <h3>Pregunta 4: ¿Cuál es el proposito principal de un sistema operativo?</h3>
+                <div class="options">
+                    <input type="radio" name="q4" value="a"> A. Proporcionar un entorno para ejecutar programas de manera práctica y eficiente.<br>
+                    <input type="radio" name="q4" value="b"> B. Proporcionar un entorno para ejecutar programas sin ningún control.<br>
+                    <input type="radio" name="q4" value="c"> C. Administrar los programas de aplicación sin acceso al hardware.<br>
+                    <input type="radio" name="q4" value="d"> D. Mejorar la velocidad de procesamiento de la computadora.<br>
+                </div>
+            </div>
+            <div class="opciones"><!-- Opciones5 -->
+                <h3>Pregunta 5: ¿Cuál es una de las principales ventajas de Linux?</h3>
+                <div class="options">
+                    <input type="radio" name="q5" value="a"> A. Es de código cerrado y no se puede modificar.<br>
+                    <input type="radio" name="q5" value="b"> B. Es de código abierto, lo que permite acceder, modificar y distribuir su código fuente.<br>
+                    <input type="radio" name="q5" value="c"> C. Solo es utilizado en dispositivos móviles.<br>
+                    <input type="radio" name="q5" value="d"> D. Es propiedad exclusiva de una empresa.<br>
+                </div>
+            </div>
+            <div class="opciones"><!-- Opciones6 -->
+                <h3>Pregunta 6: ¿Cuál es la distribución de Linux más usada en el mundo?</h3>
+                <div class="options">
+                    <input type="radio" name="q6" value="a"> A. Red Hat<br>
+                    <input type="radio" name="q6" value="b"> B. Fedora<br>
+                    <input type="radio" name="q6" value="c"> C. Ubuntu<br>
+                    <input type="radio" name="q6" value="d"> D.  Debian<br>
+                </div>
+            </div>
+            <div class="opciones"><!-- Opciones7 -->
+                <h3>Pregunta 7: ¿Cuál es una de las distribuciones más importantes para el entorno corporativo?</h3>
+                <div class="options">
+                    <input type="radio" name="q7" value="a"> A. Linux Mint<br>
+                    <input type="radio" name="q7" value="b"> B. Red Hat <br>
+                    <input type="radio" name="q7" value="c"> C. Debian <br>
+                    <input type="radio" name="q7" value="d"> D. Ubuntu<br>
+                </div>
+            </div>
+        
+
+            <button class="boton-enviar" onclick="TestCorrecto()">Enviar Respuestas</button>
+            <div id="resultado"></div> 
+        </div>
+
+    
+    </div>  
+</body>
+</html>
