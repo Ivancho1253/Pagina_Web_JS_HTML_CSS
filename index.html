@@ -4,7 +4,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabajo Practico Linux</title>
+    <title>Trabajo Practico Nº1</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,35 +17,37 @@
 <body class="fondo">
 
     <header class="encabezado"> 
-         <!-- Logo -->
-         <!-- {<a href="index.html" class="logo">
-            <div class="nav-logo"><img src="" alt="logo"></div>
-        </a>} -->
-
-
-         <!-- Nav Bar -->
         <nav class="main-navbar">
+            <img src="/imagenes/logoLP.png" alt="" class="logoPrincipal">
             <ul class="menu">
                 <li><a class="nav-item" href="index.html"><strong>Inicio</strong></a></li>
                 <li><a class="nav-item" href=""><strong>Linux</strong></a></li>
-                <li><a class="nav-item" href="contactos.html"><strong>Contactos</strong></a></li>
-                <li><a class="nav-item" href="actividades.html"><strong>Actividades</strong></a></li>            </ul>
+                <li><a class="nav-item" href="actividades.html"><strong>Actividades</strong></a></li>      
+                <li><a class="nav-item" href="contactos.html"><strong>Contactos</strong></a></li>                  
+            </ul>
         </nav>
-
-
     </header>
 
-    <div class="introduccion">
-        <div class="texto-intro">
-            <h1>Sistema Operativo Linux</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Magnam unde porro dolores totam molestiae ducimus iusto, 
-                perferendis cum voluptate aspernatur culpa doloribus at fuga, 
-                voluptates soluta eligendi explicabo, corporis ea.</p>
+
+     
+     <div class="introduccion">
+        <div class="content">
+            <h1 class="texto-intro">Sistemas operativos<br>Cap. I: "Linux"</h1>
+            <p class="texto-intro">Linux es una excelente opción para quienes buscan un sistema operativo estable, seguro y personalizable. <br>
+                Su amplia gama de distribuciones ofrece opciones para todos los gustos y necesidades, desde usuarios principiantes hasta expertos. <br>
+                Además, la comunidad de Linux es muy activa y ofrece un gran soporte a los usuarios. <br>
+                Sin embargo, es importante tener en cuenta que la curva de aprendizaje puede ser un poco más pronunciada <br>
+                para aquellos que están acostumbrados a sistemas operativos como Windows, especialmente si se quiere profundizar <br>
+                en su configuración.
+            <div class="buttons">
+                <a href="contactos.html" class="btn-1">Contactar</a>
+                <a href="#" class="btn-2">Proyecto</a>
+            </div>
         </div>
-        <img src="/imagenes/linux.png" alt="Linux logo" class="img-intro">
-    </div>
-    
+     </div>
+
+        
+
     
     <div class="contenido-principal">
 
@@ -100,6 +102,7 @@
             <h2 class="subtitulo">Linux<img class="icono" src="/imagenes/settings.png" alt=""></h2>
     
             <p>
+                <img class="img-linux" src="/imagenes/definicionLinux.jpg" alt="Descripción de la imagen" >
                 Linux se ha convertido en una de las plataformas más confiables, seguras y versátiles en el mundo de la tecnología. Desarrollado inicialmente por Linus Torvalds en 1991, Linux es utilizado tanto en servidores de alta capacidad como en dispositivos personales.
                 Una de las principales ventajas de Linux es su naturaleza de código abierto, lo que significa que cualquiera puede acceder a su código fuente, modificarlo y distribuirlo. Esto ha fomentado una gran comunidad global de desarrolladores y usuarios que contribuyen constantemente a su mejora y actualización.
                 Linux se caracteriza por su estabilidad y seguridad, lo que lo convierte en la opción preferida para servidores y entornos críticos. Además, 
@@ -178,12 +181,21 @@
         </div>
     </div>
  
-    <div>
-     
+    
+    <!-- ---------FOOTER-------- -->
+    <section id="contactos">
+        <footer class="fin">
+            <!--<img class="copyright" src="/imagenes/copyright.png" alt="">-->
+            <p>Joaquin Augusto Flores - Augusto Ojeda Mathe - Ivan Cabrera Gonzalo - Rodrigo Magallanes<br>
+                Numero de la Empresa: 3794567843<br>
+                Correo electronico:LosPibes2024@gmail.com<br>
+            </p>
+        </footer>  
+    </section> 
 
 
+<script src="scroll.js"></script>
 
-    <script src="script.js"></script>
 </body>
 
 
