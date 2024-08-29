@@ -4,7 +4,14 @@ html, body {
     width: 100%;
     height: 2000px;
     overflow-x: hidden;
+    height: 100%;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 .fondo {
@@ -87,8 +94,20 @@ html, body {
     
 }
 
+.titulo-intro {
+    color: #FFFFFF;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+}
+
 .texto-intro{
     color: #FFFFFF;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
 }
 
 .buttons {
@@ -99,7 +118,7 @@ html, body {
     display: inline-block;
     margin: 5px;
     padding: 10px 20px;
-    background-color: #c06307;
+    background-color: #a44100;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -107,7 +126,7 @@ html, body {
 }
 
 .btn-1:hover {
-    background-color: #964f04; 
+    background-color: #db7405; 
 }
 
 .btn-2 {
@@ -299,19 +318,11 @@ video {
 
 /* Footer */
 
+
 .fin {
-    display: flex;
     background-color: #585858; 
     padding: 20px;
-    align-items: center;
-    margin-top: auto;
-    justify-content: center;
-
-}
-
-.copyright {
-    margin-right: 10px; 
-    height: 20px; 
+    text-align: center; 
 }
 
 .fin p{
@@ -320,3 +331,7 @@ video {
     text-align: center; 
 }
 
+#contactos {
+    margin-top: auto;
+    width: 100%;
+}
