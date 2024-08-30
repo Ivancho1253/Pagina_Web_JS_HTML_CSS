@@ -88,10 +88,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh; 
+    height: auto; 
     text-align: center;
     color: #333; 
-    
+    padding: 20px;
 }
 
 .titulo-intro {
@@ -100,6 +100,7 @@ body {
     font-weight: 700;
     font-style: normal;
     font-size: 40px;
+    margin-bottom: 15px;
 }
 
 .texto-intro{
@@ -398,7 +399,8 @@ video {
 
 
 .fin {
-    background-color: #585858; 
+    background-color: rgba(19, 26, 33, 0.9);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0); 
     padding: 20px;
     text-align: center; 
 }
@@ -414,3 +416,37 @@ video {
     width: 100%;
 }
 
+
+
+
+/* Responsivo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .titulo-intro {
+        font-size: 30px; /* Reducir tamaño del título en pantallas pequeñas */
+    }
+
+    .texto-intro {
+        font-size: 18px; /* Reducir tamaño del texto en pantallas pequeñas */
+    }
+
+    .buttons {
+        flex-direction: column; /* Botones en columna en lugar de fila */
+        align-items: center; /* Centrar los botones */
+    }
+
+    .btn-1, .btn-2 {
+        width: 100%; /* Botones ocupan todo el ancho disponible */
+        text-align: center;
+    }
+}
+
+/* Para pantallas aún más pequeñas (como móviles) */
+@media (max-width: 480px) {
+    .titulo-intro {
+        font-size: 25px; /* Más pequeño aún en pantallas móviles */
+    }
+
+    .texto-intro {
+        font-size: 16px;
+    }
+}

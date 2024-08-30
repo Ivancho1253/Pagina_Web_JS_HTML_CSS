@@ -11,15 +11,24 @@ function TestCorrecto() {
 
     var Puntaje = 0;
     var totalPuntaje = 7;
+    var contestadas = true;
 
     for (var opciones in PreguntasCorrectas) {
         var seleccionarOpcion = document.querySelector('input[name="' + opciones + '"]:checked');
-        if (seleccionarOpcion && seleccionarOpcion.value === PreguntasCorrectas[opciones]) {
+        if (!seleccionarOpcion) {
+            contestadas = false; // Si alguna pregunta no está contestada, se marca como falso
+            break; // Se detiene el bucle si se encuentra una pregunta sin responder
+        }
+        if (seleccionarOpcion.value === PreguntasCorrectas[opciones]) {
             Puntaje++;
         }
     }
 
     var result = document.getElementById('resultado');
-    result.innerHTML = "<h2>Tu puntuación es: " + Puntaje + " de " + totalPuntaje + "</h2>";
-}
 
+    if (!contestadas) {
+        result.innerHTML = "<h2>Por favor, contesta todas las preguntas antes de enviar.</h2>";
+    } else {
+        result.innerHTML = "<h2>Tu puntuación es: " + Puntaje + " de " + totalPuntaje + "</h2>";
+    }
+}
