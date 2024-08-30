@@ -3,7 +3,7 @@ function TestCorrecto() {
         q1: "a",
         q2: "c",
         q3: "c",
-        q4: "a",
+        q4: "c",
         q5: "b",
         q6: "c",
         q7: "b"
