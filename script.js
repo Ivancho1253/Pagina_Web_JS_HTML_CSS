@@ -1,4 +1,4 @@
-function TestCorrecto() {   /*Resultados correctos  */
+function TestCorrecto() {   
     var PreguntasCorrectas = {
         q1: "a",
         q2: "c",
@@ -9,17 +9,17 @@ function TestCorrecto() {   /*Resultados correctos  */
         q7: "b"
     };
 
-    var Puntaje = 0;/*Contador  */
-    var totalPuntaje = 7;/*Total puntaje  */
+    var Puntaje = 0;
+    var totalPuntaje = 7;
 
-    for (var opciones in PreguntasCorrectas) {//for que opciones y preguntas correctas
-        var seleccionarOpcion = document.querySelector('input[name="' + opciones + '"]:checked');//mal
-        if (seleccionarOpcion && seleccionarOpcion.value === PreguntasCorrectas[opciones]) {//bien y se suma
+    for (var opciones in PreguntasCorrectas) {
+        var seleccionarOpcion = document.querySelector('input[name="' + opciones + '"]:checked');
+        if (seleccionarOpcion && seleccionarOpcion.value === PreguntasCorrectas[opciones]) {
             Puntaje++;
         }
     }
 
-    var result = document.getElementById('resultado');//se guarda el result
-    result.innerHTML = "<h2>Tu puntuación es: " + Puntaje + " de " + totalPuntaje + "</h2>";//imprime
+    var result = document.getElementById('resultado');
+    result.innerHTML = "<h2>Tu puntuación es: " + Puntaje + " de " + totalPuntaje + "</h2>";
 }
 
